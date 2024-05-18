@@ -61,7 +61,7 @@ a {
   justify-content: center;
 }
 .active {
-  background: black;
+  color: #000;
 }
 .select {
   width: 120px;
