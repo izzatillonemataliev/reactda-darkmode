@@ -4,10 +4,8 @@ export default function Footer(params) {
   return (
     <footer>
       <div className="container footer-container">
-        <a href="#" className="logo">
-          Logo
-        </a>
-        <nav>
+        <nav> 
+    
           <ul className="list">
             <li className="list-item">
               <a href="#" className="link">
@@ -33,3 +31,4 @@ export default function Footer(params) {
     </footer>
   );
 }
+

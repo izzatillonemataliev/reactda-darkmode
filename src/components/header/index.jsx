@@ -6,13 +6,13 @@ export default function Header() {
   const {
     state: { darkmode, lanuage },
     CHANGEMODE,
-    til,
+
   } = useContext(DarkMode);
   return (
     <header>
       <div className="container header-container">
-        {/* <a className="logo">Linklardan birini tanlab uni bo'sing ! </a> */}
         <nav>
+
           <ul className="list">
             <li className="list-item">
               <NavLink to="/">Home</NavLink>
@@ -25,20 +25,6 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <select
-          value={lanuage}
-          onChange={(e) => {
-            console.log(e.target.value);
-            til(e.target.value);
-          }}
-          className="select"
-        >
-          <option selected value="uz">
-            UZ
-          </option>
-          <option value="eng">ENG</option>
-          <option value="ru">RU</option>
-        </select>
         <button
           onClick={() => {
             CHANGEMODE();
@@ -51,3 +37,4 @@ export default function Header() {
     </header>
   );
 }
+
