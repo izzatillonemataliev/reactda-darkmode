@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { DarkMode } from "../../context/context";
 export default function Header() {
   const {
-    state: { darkmode, lanuage },
+    state: { darkmode},
     CHANGEMODE,
 
   } = useContext(DarkMode);
