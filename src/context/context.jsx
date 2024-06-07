@@ -1,5 +1,4 @@
 import { createContext, useEffect, useReducer } from "react";
-import { json } from "react-router-dom";
 export const DarkMode = createContext();
 
 function reduser(state, { type, peyload }) {

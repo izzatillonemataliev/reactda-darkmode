@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./header.css";
-import { NavLink } from "react-router-dom";
 import { DarkMode } from "../../context/context";
-export default function Header() {
+function Header() {
   const {
     state: { darkmode},
     CHANGEMODE,
@@ -12,7 +11,6 @@ export default function Header() {
     <header>
       <div className="container header-container">
         <nav>
-
           <ul className="list">
             <li className="list-item">
               <NavLink to="/">Home</NavLink>
@@ -38,3 +36,4 @@ export default function Header() {
   );
 }
 
+export default Header;
